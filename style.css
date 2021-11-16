@@ -39,3 +39,36 @@
   color: #5f5f5f;
   font-size: 15px;
 }
+.content{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+
+}
+.left-col{
+  margin-left: 6%;
+
+}
+  .left-col h1{
+    font-size: 90px;
+    color: #fff;
+    line-height: 110px;
+    float: left;
+
+  }
+  .right-col{
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .right-col p{
+    font-size: 18px;
+    color:#5f5f5f;
+    margin-right: 15px;
+  }
+  #icon{
+    width: 80px;
+    cursor: pointer;
+  }

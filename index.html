@@ -12,9 +12,9 @@
 <body>
 
   <div class="container">
-   
+
     <div class="navbar">
-      <img src="../WebSite/assets/logo.png"  class="logo" alt="">
+      <img src="../WebSite/assets/logo.png" class="logo" alt="">
       <ul>
         <li> <a href="#">Home</a></li>
         <li> <a href="#">Sobre</a></li>
@@ -23,7 +23,36 @@
         <li> <a href="#">Conectar</a></li>
       </ul>
     </div>
+    <div class="content">
+      <div class="left-col">
+
+        <h1>  Favorite <br>Music</h1>
+      </div>
+      <div class="right-col">
+        <P>Click Here to listen</P>
+        <img src="../WebSite/assets/play.png" id="icon">
+      </div>
+
+    </div>
+
   </div>
+  <audio id="MySongs">
+    <source src="../WebSite/assets/The Ellie Badge_48k.mp3" type=" ">
+  </audio>
+
+  <script>
+   
+   var MySongs = document.getElementById("MySongs");
+   var icon = document.getElementById("icon");
+
+   icon.onclick = function(){
+    if(MySongs.pause){
+      MySongs.play();
+      icon.scr =""
+    }
+   }
+
+  </script>
 </body>
 
 </html>
